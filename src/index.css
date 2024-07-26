@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pizza-main-section{
+    @apply w-full bg-gradient-to-t from-slate-800 via-gray-800 to-black
+}
