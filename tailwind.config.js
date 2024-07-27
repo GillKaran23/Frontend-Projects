@@ -8,6 +8,10 @@ export default {
     extend: {
       backgroundImage: {
       },
+      colors:{
+        'estate-primary' : '#88C7B2',
+        'estate-secondary' : '#3C3B5D',
+      }
     },
   },
   plugins: [],

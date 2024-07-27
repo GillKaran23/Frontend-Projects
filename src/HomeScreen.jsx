@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import pizzalogo from "./assets/pizzaimages/pizza_logo.png";
+import mioralogo from "./assets/mioraimages/miora_logo.png";
 
 let HomeScreen = () => {
     let projects = [
@@ -7,7 +8,12 @@ let HomeScreen = () => {
             id: 1,
             img: pizzalogo,
             link: "/pizzie/"
-        }
+        },{
+            id: 1,
+            img: mioralogo,
+            link: "/miora/"
+        },
+
     ];
     return (
         <>
