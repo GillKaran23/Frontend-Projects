@@ -56,7 +56,7 @@ let EstateNavbar = () => {
                 </div>
                 {
                     nav && (
-                        <div className="w-[55%] h-screen fixed top-0 left-0 z-50 bg-estate-primary py-4 px-4">
+                        <div className="w-[60%] h-screen fixed top-0 left-0 z-50 bg-estate-primary py-4 px-4">
                             <div>
                                 <Link to="/miora/"><img className="w-40 h-14" src={mioralogo} alt="Miora Logo" /></Link>
                             </div>

@@ -1,8 +1,8 @@
 # FrontEnd Projects
 
-In this project, I want to enhance my FrontEnd skills in React and Tailwind.
+Currently creating various Front-End Websites using ReactJS and Tailwind CSS to enhance the skills. Through these projects, Aim to master modern Web Development Techniques and build responsive, aesthetically pleasing applications.
 
-These of the following are the Frontend Projects:
+Behold, a showcase of my creations :
 
 - Pizzie
 - MioraEstate
