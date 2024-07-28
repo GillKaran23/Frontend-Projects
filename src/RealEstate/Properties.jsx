@@ -50,30 +50,35 @@ let Properties = () => {
         {
             id: 1,
             image: house1,
+            reason: "For Sale",
             name: "Great Villa",
             price: 500000,
             by: "John Doe"
         }, {
             id: 2,
             image: house2,
+            reason: "For Rent",
             name: "Royal Villa",
             price: 1000000,
             by: "Michael Brown"
         }, {
             id: 3,
             image: house1,
-            name: "Shahi Villa",
-            price: 100000,
+            reason: "For Tourists",
+            name: "Shah Villa",
+            price: 210000,
             by: "Emily Davis"
         }, {
             id: 4,
             image: house2,
+            reason: "For PG",
             name: "Great Mansion",
             price: 300000,
             by: "Jane Smith"
         }, {
             id: 5,
             image: house1,
+            reason: "For Sale",
             name: "Royal Niwas",
             price: 400000,
             by: "Alice Johnson"
@@ -100,10 +105,11 @@ let Properties = () => {
                         {
                             properties.map((value) => {
                                 return (
-                                    <div key={value.id} className="bg-white rounded-lg overflow-hidden">
+                                    <div key={value.id} className="hover:scale-105 transform ease-in-out duration-300 bg-white rounded-lg overflow-hidden">
                                         <img src={value.image} alt="houses"></img>
                                         <div className="p-5">
                                             <h2 className="text-lg text-estate-secondary font-bold">{value.name}</h2>
+                                            <p className="text-gray-400 font-light text-sm">{value.reason}</p>
                                             <p className="text-base font-semibold text-teal-700">{value.price}</p>
                                             <hr className="border-2 border-estate-secondary rounded-full mt-3 mb-3"></hr>
                                             <p className="text-base font-bold text-teal-700"><span className="text-black">By:</span> {value.by}</p>
