@@ -9,7 +9,7 @@ let HomeScreen = () => {
             img: pizzalogo,
             link: "/pizzie/"
         },{
-            id: 1,
+            id: 2,
             img: mioralogo,
             link: "/miora/"
         },

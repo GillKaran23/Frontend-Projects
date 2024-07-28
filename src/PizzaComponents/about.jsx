@@ -26,7 +26,7 @@ let PizzaAbout = () => {
                         {
                             aboutcard.map((value) => {
                                 return (
-                                    <div key={value.id} className="text-white text-center border-2 bg-gradient-to-b from-black to-gray-800 border-white p-5 rounded-xl w-56 mx-auto md:mx-0 cursor-pointer">
+                                    <div key={value.id} className="text-white text-center border-2 bg-gradient-to-b from-black to-gray-800 border-white p-5 rounded-xl w-56 mx-auto md:mx-0 cursor-pointer transform hover:scale-105 transition duration-300 ease-in-out">
                                         <div className="flex justify-center">
                                             {value.logo}
                                         </div>

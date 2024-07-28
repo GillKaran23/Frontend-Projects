@@ -26,7 +26,7 @@ let DreamHome = () => {
         <>
             <div className="w-full bg-gray-200">
                 <div className="max-w-7xl mx-auto p-4 py-10">
-                    <div className="grid grid-cols-1 md:grid-cols-2 mb-16 gap-5">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 mb-16 gap-5">
                         <img src={house2} className="rounded-xl mx-auto" alt="House"></img>
                         <div className="bg-gray-300 mx-auto px-5 py-2 rounded-xl text-lg">
                             <p className="mb-6">Creating quality urban lifestyles, building stronger communities and creating a safe haven for the general populace is what we do, we give affordable house for sell, rent and also lease great properties for any kind of usage.</p>

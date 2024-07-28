@@ -40,7 +40,7 @@ const PizzaTypes2 = () => {
             id: 5,
             img: pizza5,
             name: "Caprese",
-            price: 11.99,
+            price: 3,
             rating: 4.0,
         },
     ];
@@ -59,20 +59,20 @@ const PizzaTypes2 = () => {
                     <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6'>
                         {pizzas.map((pizza) => (
                             <div key={pizza.id} className='group flex flex-col justify-center items-center bg-gradient-to-t border-2 border-gray-500 from-black to-gray-800 rounded-2xl p-4 shadow-lg cursor-pointer'>
-                                <div className='w-40 h-36 overflow-hidden flex justify-center mb-2'>
+                                <div className='md:w-40 md:h-36 overflow-hidden flex justify-center mb-2'>
                                     <img src={pizza.img} alt={pizza.name} className='w-full h-full object-fill group-hover:scale-125 transition-transform duration-300 ease-in-out' />
                                 </div>
                                 <h2 className="text-lg font-semibold text-white mt-1">{pizza.name}</h2>
-                                <div className="flex justify-between w-full mt-1 gap-2">
-                                    <div className="flex items-center">
+                                <div className="mx-auto flex md:flex-row flex-col items-center justify-between w-full mt-1 gap-1">
+                                        <div className='flex'>
                                         {[...Array(5)].map((star, i) => (
                                             <FaStar
                                                 key={i}
                                                 className={i < pizza.rating ? "text-yellow-400" : "text-gray-400"}
                                             />
                                         ))}
-                                    </div>
-                                    <p className="text-red-500">$<span className='text-white'>{pizza.price.toFixed(2)}</span></p>
+                                        </div>
+                                    <p className="text-red-500">$<span className='text-white'>{pizza.price}</span></p>
                                 </div>
                                 <div className="flex justify-between w-full mt-4 px-5">
                                     <div onClick={() => handleFavoriteClick(pizza.id)} className="cursor-pointer">

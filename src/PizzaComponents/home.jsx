@@ -32,7 +32,7 @@ let PizzaHome = () => {
                         {
                             homecard.map((value) => {
                                 return (
-                                    <div key={value.id} className="text-white w-32 flex-shrink-0 text-center border-2 bg-gradient-to-b from-black to-gray-900 border-white p-4 rounded-2xl cursor-pointer">
+                                    <div key={value.id} className="transform hover:scale-105 transition duration-300 ease-in-out text-white w-32 flex-shrink-0 text-center border-2 bg-gradient-to-b from-black to-gray-900 border-white p-4 rounded-2xl cursor-pointer">
                                         <div className="flex justify-center">
                                             {value.logo}
                                         </div>
