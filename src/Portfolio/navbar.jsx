@@ -1,30 +1,32 @@
+import { useState } from "react";
 import { BsPersonFill } from "react-icons/bs";
 import { GoHomeFill, GoProject } from "react-icons/go";
 import { GrDocument, GrTechnology } from "react-icons/gr";
 import { MdWorkspacesFilled } from "react-icons/md";
 
 const PortNavbar = () => {
+    let [screen, setScreen]=useState(1);
     let menuitems = [
         {
             id: 1,
             logo: <GoHomeFill />,
-            text: "Home"
+            text: "Home",
         }, {
             id: 2,
             logo: <BsPersonFill />,
-            text: "About"
+            text: "About",
         }, {
             id: 3,
             logo: <GrDocument />,
-            text: "Resume"
+            text: "Resume",
         }, {
             id: 4,
             logo: <GrTechnology />,
-            text: "Skills"
+            text: "Skills",
         }, {
             id: 5,
             logo: <MdWorkspacesFilled />,
-            text: "Experience"
+            text: "Experience",
         }, {
             id: 6,
             logo: <GoProject />,
@@ -39,7 +41,7 @@ const PortNavbar = () => {
                     menuitems.map((value) => {
                         return (
                             <div key={value.id} className="flex relative items-center gap-3 cursor-pointer group" >
-                                <div>{value.logo}</div>
+                                <div><button onClick={()=>{setScreen(value.id)}}>{value.logo}</button></div>
                                 <div className="absolute left-12 text-white bg-black hidden group-hover:block text-base rounded-xl px-2 py-1">{value.text}</div>
                             </div>
                         );
@@ -54,15 +56,20 @@ const PortNavbar = () => {
                 menuitems.map((value)=>{
                     return(
                         <div key={value.id} className="text-3xl">
-                            {value.logo}
+                           <button onClick={()=>{setScreen(value.id)}}>{value.logo}</button>
                         </div>
                     );
                 })
             }
         </div>
+
+        <div>
+            {
+                screen === 1? <></> : screen === 2 ? <></> : <></>
+            }
+        </div>
+
         </>
-        
-        
     );
 };
 
