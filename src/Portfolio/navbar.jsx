@@ -5,6 +5,7 @@ import { GrDocument, GrTechnology } from "react-icons/gr";
 import { MdWorkspacesFilled } from "react-icons/md";
 import PortAbout from "./portabout";
 import PortHome from "./PortHome";
+import PortResume from "./PortResume";
 
 const PortNavbar = () => {
     let [screen, setScreen]=useState(1);
@@ -67,7 +68,7 @@ const PortNavbar = () => {
 
         <div>
             {
-                screen === 1? <PortHome/> : screen === 2 ? <PortAbout/> : <></>
+                screen === 1? <PortHome/> : screen === 2 ? <PortAbout/> : screen === 3? <PortResume/> : <></>
             }
         </div>
 
