@@ -3,6 +3,8 @@ import { BsPersonFill } from "react-icons/bs";
 import { GoHomeFill, GoProject } from "react-icons/go";
 import { GrDocument, GrTechnology } from "react-icons/gr";
 import { MdWorkspacesFilled } from "react-icons/md";
+import PortAbout from "./portabout";
+import PortHome from "./PortHome";
 
 const PortNavbar = () => {
     let [screen, setScreen]=useState(1);
@@ -65,7 +67,7 @@ const PortNavbar = () => {
 
         <div>
             {
-                screen === 1? <></> : screen === 2 ? <></> : <></>
+                screen === 1? <PortHome/> : screen === 2 ? <PortAbout/> : <></>
             }
         </div>
 
